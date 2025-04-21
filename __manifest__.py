@@ -6,8 +6,8 @@
     'author': 'Your Name',
     'depends': ['crm'],
     'data': [
-        'security/ir.model.access.csv',
         'security/crm_team_security.xml',
+        'security/ir.model.access.csv',
         'views/crm_team_view.xml',
     ],
     'installable': True,
