@@ -1,0 +1,5 @@
+access_team_lead,model_crm_lead,group_team_lead,read,1,1,1,1
+access_team_lead,model_crm_team,group_team_lead,read,1,1,1,1
+access_team_lead,model_crm_team,group_team_lead,write,1,1,1,1
+access_team_lead,model_crm_team,group_team_lead,create,1,1,1,1
+access_team_lead,model_crm_team,group_team_lead,unlink,1,1,1,1
