@@ -2,7 +2,7 @@
 <odoo>
     <record id="group_crm_team_lead" model="res.groups">
         <field name="name">Team Lead</field>
-        <field name="category_id" ref="base.module_category_sales_management"/>
+        <field name="category_id" ref="base.module_category_sales"/>
     </record>
 
     <record id="crm_team_lead_rule" model="ir.rule">
