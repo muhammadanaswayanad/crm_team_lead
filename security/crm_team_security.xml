@@ -8,7 +8,7 @@
     <record id="crm_team_lead_rule" model="ir.rule">
         <field name="name">Team Lead Access to Leads</field>
         <field name="model_id" ref="crm.model_crm_lead"/>
-        <field name="domain_force">[('team_id', 'in', user.team_ids)]</field>
+        <field name="domain_force">[('team_id', '=', user.team_id.id)]</field>
         <field name="groups" eval="[(4, ref('group_crm_team_lead'))]"/>
     </record>
 </odoo>
