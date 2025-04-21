@@ -1,3 +1,5 @@
+from odoo import models, fields, api
+
 class CrmTeamLead(models.Model):
     _inherit = 'crm.team'
 
@@ -10,10 +12,9 @@ class CrmTeamLead(models.Model):
 
 class ResUsers(models.Model):
     _inherit = 'res.users'
+    
+    team_id = fields.Many2one('crm.team', string='Team')
 
-    team_id = fields.Many2one('crm.team', string='Team')  # Link user to their team
-
-# Create the new user group "Team Lead"
 class TeamLeadGroup(models.Model):
     _inherit = 'res.groups'
 
