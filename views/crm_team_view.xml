@@ -17,19 +17,11 @@
     <record id="view_crm_team_lead_tree" model="ir.ui.view">
         <field name="name">crm.team.lead.tree</field>
         <field name="model">crm.team</field>
+        <field name="inherit_id" ref="sales_team.crm_team_view_tree"/>
         <field name="arch" type="xml">
-            <tree string="Team Leads">
-                <field name="name"/>
-                <field name="member_ids"/>
-            </tree>
+            <field name="name" position="after">
+                <field name="member_ids" widget="many2many_tags"/>
+            </field>
         </field>
     </record>
-
-    <record id="action_crm_team_lead" model="ir.actions.act_window">
-        <field name="name">Team Leads</field>
-        <field name="res_model">crm.team</field>
-        <field name="view_mode">tree,form</field>
-    </record>
-
-    <menuitem id="menu_crm_team_lead" name="Team Leads" parent="crm.crm_menu_root" action="action_crm_team_lead" sequence="10"/>
 </odoo>
